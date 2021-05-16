@@ -7,13 +7,7 @@
 
 
 
-/********************************************
- Function name: GSM_u8Init
- Function: sending the basic command <AT> and Stop ECHO
- Formal parameter: None
- Return value: 0 -> initialization faild   1-> initialization done
- Remarks: None
-*********************************************/
+
 u8 GSM_u8Init(void)
 {
 	u8 Local_u8Result = 0;
@@ -53,13 +47,7 @@ u8 GSM_u8Init(void)
 
 
 
-/********************************************
- Function name: GSM_u8ValidateCmd
- Function: Recieve Response and Check if ok
- Formal parameter: None
- Return value: 1 -> if ok
- Remarks: None
-*********************************************/
+
 u8 GSM_u8ValidateCmd(void)
 {
 	u8 Local_u8Response[100] = {0};
